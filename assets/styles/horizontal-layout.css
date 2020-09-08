@@ -25,7 +25,7 @@ body {
   width: 400px;
   min-width: 400px;
   padding: 40px 10px;
-  max-height: 120vh;
+  max-height: calc(100vh - 92px);
   overflow: auto;
 }
 

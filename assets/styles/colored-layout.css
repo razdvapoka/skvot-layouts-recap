@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 92px;
+}
+
 h1 {
   font-size: 80px;
   text-transform: uppercase;
