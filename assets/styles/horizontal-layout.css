@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-top: 92px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.col {
+  width: 400px;
+  min-width: 400px;
+  padding: 40px 10px;
+  max-height: 120vh;
+  overflow: auto;
+}
+
+.col img + p,
+.col p + img {
+  margin-top: 20px;
+}
+
+.col + .col {
+  border-left: 1px solid black;
+}
+
+.image {
+  width: 100%;
+}

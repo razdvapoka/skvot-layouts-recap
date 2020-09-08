@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-HeavyItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-BoldItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Bold.woff2') format('woff2'),
+        url('MonumentGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Semi-Mono';
+    src: url('MonumentGrotesk-SemiMono.woff2') format('woff2'),
+        url('MonumentGrotesk-SemiMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('MonumentGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Medium.woff2') format('woff2'),
+        url('MonumentGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-MediumItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Black.woff2') format('woff2'),
+        url('MonumentGrotesk-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Italic.woff2') format('woff2'),
+        url('MonumentGrotesk-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-Heavy.woff2') format('woff2'),
+        url('MonumentGrotesk-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('MonumentGrotesk-BlackItalic.woff2') format('woff2'),
+        url('MonumentGrotesk-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Mono';
+    src: url('MonumentGrotesk-Mono.woff2') format('woff2'),
+        url('MonumentGrotesk-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

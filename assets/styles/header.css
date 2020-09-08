@@ -1,0 +1,45 @@
+a,
+a:visited {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list > li + li {
+  margin-left: 20px;
+}
+
+header {
+  border: 1px solid black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  padding: 30px;
+  background-color: cornflowerblue;
+  font-size: 30px;
+  font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 20px;
+  background: coral;
+}
