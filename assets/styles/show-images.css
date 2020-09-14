@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  padding-top: 192px;
+}
+
+.img-hint {
+  position: relative;
+  color: red;
+  cursor: pointer;
+}
+
+.img-hint:hover::after {
+  display: block;
+  position: absolute;
+  content: "";
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-hint-1:hover::after {
+  background-image: url(../images/city-1.png);
+  width: 200px;
+  height: 200px;
+}
+
+.img-hint-2:hover::after {
+  background-image: url(../images/city-2.png);
+  width: 200px;
+  height: 200px;
+}
