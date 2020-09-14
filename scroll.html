@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="assets/styles/colored-layout.css" />
+    <link rel="stylesheet" href="assets/styles/scroll.css" />
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
     <link rel="stylesheet" href="assets/styles/header.css" />
   </head>
@@ -25,18 +25,22 @@
         </ul>
       </nav>
     </header>
-    <div class="parent">
-      <div class="div1 bg-grey">
-        <h1>hello skvot</h1>
-      </div>
-      <div class="div2 bg-red"></div>
-      <div class="div3"></div>
-      <div class="div4 bg-blue"></div>
-      <div class="div5 bg-green"></div>
-      <div class="div6"></div>
-      <div class="div7 bg-grey"></div>
-      <div class="div8 bg-red"></div>
-      <div class="div9 bg-blue"></div>
+    <div class="red-rotating-guy">
+      scrolling makes me brighter and rotates me
     </div>
+    <div class="filler"></div>
+    <script>
+      var redRotatingGuy = document.querySelector(".red-rotating-guy");
+      var scrollHeight = document.body.scrollHeight - window.innerHeight;
+      function handleScroll(e) {
+        console.log(scrollHeight, window.scrollY);
+        var intensity = window.scrollY / scrollHeight;
+        var angle = 360 * intensity + "deg";
+        redRotatingGuy.style.transform = "rotate(" + angle + ")";
+        redRotatingGuy.style.backgroundColor =
+          "rgba(138,43,226," + intensity + ")";
+      }
+      window.addEventListener("scroll", handleScroll);
+    </script>
   </body>
 </html>

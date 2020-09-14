@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.filler {
+  height: 300vh;
+}
+
+.red-rotating-guy {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid blueviolet;
+  font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+}
