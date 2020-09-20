@@ -30,18 +30,6 @@
       scrolling makes me brighter and rotates me
     </div>
     <div class="filler"></div>
-    <script>
-      var redRotatingGuy = document.querySelector(".red-rotating-guy");
-      var scrollHeight = document.body.scrollHeight - window.innerHeight;
-      function handleScroll(e) {
-        console.log(scrollHeight, window.scrollY);
-        var intensity = window.scrollY / scrollHeight;
-        var angle = 360 * intensity + "deg";
-        redRotatingGuy.style.transform = "rotate(" + angle + ")";
-        redRotatingGuy.style.backgroundColor =
-          "rgba(138,43,226," + intensity + ")";
-      }
-      window.addEventListener("scroll", handleScroll);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

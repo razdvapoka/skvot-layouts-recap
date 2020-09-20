@@ -4,28 +4,6 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 4%;
-  }
-  50% {
-    background-position: 100% 97%;
-  }
-  100% {
-    background-position: 0% 4%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 4%;
-  }
-  50% {
-    background-position: 100% 97%;
-  }
-  100% {
-    background-position: 0% 4%;
-  }
-}
 @keyframes AnimationName {
   0% {
     background-position: 0% 4%;
@@ -78,7 +56,8 @@ body {
 }
 
 .grow-on-hover {
-  transition: transform 0.3s ease-in-out 0.1s;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 .grow-on-hover:hover {
@@ -91,8 +70,6 @@ body {
 }
 
 .fancy-bg:hover {
-  -webkit-animation: AnimationName 4s ease infinite;
-  -moz-animation: AnimationName 4s ease infinite;
   animation: AnimationName 4s ease infinite;
 }
 
@@ -135,6 +112,6 @@ body {
   top: 0;
   background: linear-gradient(coral, chartreuse, royalblue);
   will-change: top, left;
-  animation: go-around 2s linear infinite alternate;
+  animation: go-around 2s linear infinite;
   animation-play-state: paused;
 }

@@ -29,18 +29,24 @@
     <div class="wrapper">
       <div class="box change-colors-on-hover">I change colors on hover</div>
       <div class="box grow-on-hover">I change size on hover</div>
-      <div class="box fancy-bg"><span>I animate backround on hover</span></div>
+      <div class="box fancy-bg">
+        <span>I animate backround on hover</span>
+      </div>
       <div id="hero" class="box go-around-parent">
         <span>I have a moving child</span>
         <div class="go-around"></div>
       </div>
     </div>
     <script>
+      // console.log("Hello, Skvot!");
+
+      // var span = document.querySelector(".box.fancy-bg > span");
+      // console.log(span);
       var hero = document.getElementById("hero");
       function handleHeroClick() {
         hero.classList.toggle("fancy-bg");
       }
-      hero.addEventListener("click", handleHeroClick);
+      hero.addEventListener("dblclick", handleHeroClick);
     </script>
   </body>
 </html>
