@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  color: white;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.box {
+  border: 2px solid antiquewhite;
+  height: 200px;
+}
+
+.col {
+  padding: 5px;
+}
+
+.col-1 {
+  width: calc(1 / 12 * 100%);
+}
+.col-2 {
+  width: calc(2 / 12 * 100%);
+}
+.col-3 {
+  width: calc(3 / 12 * 100%);
+}
+.col-4 {
+  width: calc(4 / 12 * 100%);
+}
+.col-5 {
+  width: calc(5 / 12 * 100%);
+}
+.col-6 {
+  width: calc(6 / 12 * 100%);
+}
+.col-7 {
+  width: calc(7 / 12 * 100%);
+}
+.col-8 {
+  width: calc(8 / 12 * 100%);
+}
+.col-9 {
+  width: calc(9 / 12 * 100%);
+}
+.col-10 {
+  width: calc(10 / 12 * 100%);
+}
+.col-11 {
+  width: calc(11 / 12 * 100%);
+}
+.col-12 {
+  width: calc(12 / 12 * 100%);
+}
+
+@media (max-width: 1000px) {
+  .col-1-t {
+    width: calc(1 / 12 * 100%);
+  }
+  .col-2-t {
+    width: calc(2 / 12 * 100%);
+  }
+  .col-3-t {
+    width: calc(3 / 12 * 100%);
+  }
+  .col-4-t {
+    width: calc(4 / 12 * 100%);
+  }
+  .col-5-t {
+    width: calc(5 / 12 * 100%);
+  }
+  .col-6-t {
+    width: calc(6 / 12 * 100%);
+  }
+  .col-7-t {
+    width: calc(7 / 12 * 100%);
+  }
+  .col-8-t {
+    width: calc(8 / 12 * 100%);
+  }
+  .col-9-t {
+    width: calc(9 / 12 * 100%);
+  }
+  .col-10-t {
+    width: calc(10 / 12 * 100%);
+  }
+  .col-11-t {
+    width: calc(11 / 12 * 100%);
+  }
+  .col-12-t {
+    width: calc(12 / 12 * 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .col-1-s {
+    width: calc(1 / 12 * 100%);
+  }
+  .col-2-s {
+    width: calc(2 / 12 * 100%);
+  }
+  .col-3-s {
+    width: calc(3 / 12 * 100%);
+  }
+  .col-4-s {
+    width: calc(4 / 12 * 100%);
+  }
+  .col-5-s {
+    width: calc(5 / 12 * 100%);
+  }
+  .col-6-s {
+    width: calc(6 / 12 * 100%);
+  }
+  .col-7-s {
+    width: calc(7 / 12 * 100%);
+  }
+  .col-8-s {
+    width: calc(8 / 12 * 100%);
+  }
+  .col-9-s {
+    width: calc(9 / 12 * 100%);
+  }
+  .col-10-s {
+    width: calc(10 / 12 * 100%);
+  }
+  .col-11-s {
+    width: calc(11 / 12 * 100%);
+  }
+  .col-12-s {
+    width: calc(12 / 12 * 100%);
+  }
+}

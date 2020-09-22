@@ -28,7 +28,7 @@ header {
   width: 100vw;
   padding: 30px;
   background-color: cornflowerblue;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
 }
 
@@ -42,4 +42,10 @@ header {
   height: 100%;
   padding: 0 20px;
   background: coral;
+}
+
+@media (max-width: 800px) {
+  header {
+    font-size: 15px;
+  }
 }

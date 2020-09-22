@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: calc(10 / 1440 * 100vw);
+  /* font-size: calc(10 / 1440 * 100vw); */
   background: black;
 }
 /*
@@ -18,6 +18,12 @@ html {
 @media (min-width: 1600px) {
   html {
     font-size: calc(10 / 1440 * 1600px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1600px) {
+  html {
+    background-color: blue;
   }
 } */
 
