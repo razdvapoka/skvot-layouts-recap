@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intersection</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/intersection.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  </head>
+  <body>
+    <a
+      style="
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: block;
+        padding: 5px;
+      "
+      href="/"
+      >home</a
+    >
+    <h1 class="title">intersection observer and scrollTo demo</h1>
+    <div class="buttons">
+      <button class="scroll-to-button button-1">child 1</button>
+      <button class="scroll-to-button button-2">child 2</button>
+      <button class="scroll-to-button button-3">child 3</button>
+      <button class="scroll-to-button button-4">child 4</button>
+      <button class="scroll-to-button button-top">to top</button>
+    </div>
+    <div class="child child-1"></div>
+    <div class="child child-2"></div>
+    <div class="child child-3"></div>
+    <div class="child child-4"></div>
+    <script>
+      function handleIntersectionChange(entries) {
+        entries.forEach(function (entry) {
+          if (entry.intersectionRatio > 0.5) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      }
+
+      var options = {
+        rootMargin: "0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      };
+
+      var observer = new IntersectionObserver(
+        handleIntersectionChange,
+        options
+      );
+
+      document.querySelectorAll(".child").forEach(function (child) {
+        observer.observe(child);
+      });
+
+      document
+        .querySelector(".button-1")
+        .addEventListener("click", function () {
+          var element = document.querySelector(".child-1");
+          window.scrollTo({
+            top: element.getBoundingClientRect().top + window.scrollY,
+            behavior: "smooth",
+          });
+        });
+
+      document
+        .querySelector(".button-2")
+        .addEventListener("click", function () {
+          var element = document.querySelector(".child-2");
+          element.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+
+      document
+        .querySelector(".button-3")
+        .addEventListener("click", function () {
+          var element = document.querySelector(".child-3");
+          element.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+
+      document
+        .querySelector(".button-4")
+        .addEventListener("click", function () {
+          var element = document.querySelector(".child-4");
+          element.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+
+      document
+        .querySelector(".button-top")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>

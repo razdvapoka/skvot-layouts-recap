@@ -5,10 +5,10 @@
 }
 
 html {
-  /* font-size: calc(10 / 1440 * 100vw); */
+  font-size: calc(10 / 1440 * 100vw);
   background: black;
 }
-/*
+
 @media (max-width: 600px) {
   html {
     font-size: 6px;
@@ -20,10 +20,16 @@ html {
     font-size: calc(10 / 1440 * 1600px);
   }
 }
-
+/*
 @media (min-width: 600px) and (max-width: 1600px) {
   html {
     background-color: blue;
+  }
+}
+
+@media (max-width: 600px), (min-width: 1600px) {
+  html {
+    background-color: red;
   }
 } */
 
@@ -33,59 +39,74 @@ body {
   padding: 5rem;
   border: 2px solid coral;
 }
-/*
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   body {
     padding: 2rem;
   }
-} */
+}
 
 .parent {
   display: flex;
   position: relative;
 }
-/*
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+  .parent {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 1000px) {
   .parent {
     flex-direction: column;
   }
-} */
+}
 
 .child {
   width: 15rem;
   height: 15rem;
   border: 2px solid chartreuse;
+  font-size: 15rem;
+  color: cyan;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 1000px) {
   .child:first-child {
     background: navy;
     border-color: olive;
   }
+
   .child:nth-child(2) {
     background: wheat;
     border-color: blueviolet;
   }
-  .child:last-child {
-    display: none;
+
+  .child:nth-child(3) {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .child:nth-child(3):hover {
+    opacity: 1;
   }
 
   .child {
     width: 20rem;
     height: 20rem;
   }
-} */
+}
 
 .child + .child {
   margin-left: 2rem;
 }
-/*
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   .child + .child {
     margin-left: 0;
     margin-top: 2rem;
   }
-} */
+}
 
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -93,12 +114,12 @@ p {
   color: cornsilk;
   margin-top: 3rem;
 }
-/*
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   p {
     font-size: 4rem;
   }
-} */
+}
 
 .hidden-circle {
   width: 20rem;
@@ -115,12 +136,12 @@ p {
   font-size: 3rem;
   text-align: center;
 }
-/*
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
   .hidden-circle {
     display: flex;
   }
-} */
+}
 
 .hidden-box {
   width: 10rem;
@@ -136,9 +157,9 @@ p {
   text-align: center;
   color: white;
 }
-/*
+
 @media (min-width: 1600px) {
   .hidden-box {
     display: flex;
   }
-} */
+}

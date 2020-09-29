@@ -10,12 +10,12 @@ html {
 body {
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding: 200px 40px;
 }
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: -5px;
 }
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/slider.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  </head>
+  <body>
+    <body>
+      <a
+      style="
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid black;
+        display: block;
+        padding: 5px;
+      "
+      href="/"
+      >home</a
+    >
+      <div class="embla" id="embla">
+        <div class="embla__container">
+          <div class="embla__slide">Slide 1</div>
+          <div class="embla__slide">Slide 2</div>
+          <div class="embla__slide">Slide 3</div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
+      <script>
+        var emblaNode = document.getElementById("embla");
+        var embla = EmblaCarousel(emblaNode);
+      </script>
+  </body>
+</html>
+
